@@ -1,0 +1,38 @@
+{
+    "extends": [
+    "standard",
+    "prettier/standard",
+    "plugin:prettier/recommended"
+],
+    "env": {
+    "browser" : true,
+        "node": true
+},
+    "rules": {
+    "eqeqeq": ["error", "always"],
+        "object-curly-spacing"  : [2, "always"],
+        "no-console"            : 2,
+        "prefer-const"          : 2,
+        "no-var"                : 2,
+        "comma-dangle"          : ["error", "always-multiline"],
+        "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+        "indent": ["error", 2, {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        "MemberExpression": 1,
+        "CallExpression": {
+            "arguments": 1
+        },
+        "FunctionDeclaration": {
+            "parameters": 1,
+            "body": 1
+        },
+        "FunctionExpression": {
+            "parameters": 1,
+            "body": 1
+        }
+    }],
+        "no-unused-vars": "off"
+}
+}
